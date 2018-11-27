@@ -47,7 +47,8 @@ If we want to use jupyter we can use the module findspark (https://github.com/mi
 
 pip install findspark
 
-conda config --add channels conda-forge # add conda-forge to channgels
+conda config --add channels conda-forge
+
 conda install findspark
 
 # Jupyter
