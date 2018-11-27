@@ -55,23 +55,4 @@ conda install findspark
 
 ## Jupyter
 
-Just as an example (the books.xml file should be downloaded https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml)
-
-import findspark
-
-findspark.init('/home/folder/spark-2.4.0-bin-hadoop2.7')
-
-from pyspark import SparkConf, SparkContext
-
-from pyspark.sql import SQLContext, Row,SparkSession
-
-spark = SparkSession.builder.master("local[*]").appName("Word Count").getOrCreate()
-
-df = spark.read.format('com.databricks.spark.xml').options(rowTag='book').load('/Downloads/books.xml')
-
-df.show(12)
-
-df.select("author", "_id").write \
-    .format('com.databricks.spark.xml') \
-    .options(rowTag='book', rootTag='books') \
-    .save('newbooks.xml')
+Just as an example pyspark_base.py (the books.xml file should be downloaded https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml)
