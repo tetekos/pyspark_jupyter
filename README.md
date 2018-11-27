@@ -6,12 +6,15 @@ How to install/use Pyspark within Jupyter
 We need to install Java 8
 
 sudo add-apt-repository ppa:webupd8team/java
+
 Update the installer
 
 sudo apt update; sudo apt install oracle-java8-installer
+
 Set the java env variables
 
 sudo apt install oracle-java8-set-default
+
 Check at the end that java version is correct
 
 java -version
@@ -53,14 +56,14 @@ conda install findspark
 
 # Jupyter
 
-import findspark
-findspark.init('/home/folder/spark-2.4.0-bin-hadoop2.7')
 Just as an example (the books.xml file should be downloaded https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml)
 
 import findspark
-findspark.init('/home/lefteris/Downloads/spark-2.4.0-bin-hadoop2.7')
+
+findspark.init('/home/folder/spark-2.4.0-bin-hadoop2.7')
 
 from pyspark import SparkConf, SparkContext
+
 from pyspark.sql import SQLContext, Row,SparkSession
 
 spark = SparkSession.builder.master("local[*]").appName("Word Count").getOrCreate()
