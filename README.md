@@ -2,9 +2,8 @@
 How to install/use Pyspark within Jupyter
 
 Java 8
-We need to install Java 8
 
-Open terminal 
+We need to install Java 8
 
 sudo add-apt-repository ppa:webupd8team/java
 Update the installer
@@ -19,7 +18,7 @@ java -version
 
 
 Spark-2.4.0
-Download the spark-2.4.0 from http://spark.apache.org/downloads.html
+Download spark-2.4.0 from http://spark.apache.org/downloads.html
 
 Unzip it and move it to a folder (just be mindful of the ownership of that folder)
 
