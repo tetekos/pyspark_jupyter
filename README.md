@@ -32,9 +32,11 @@ nano ~/.bashrc
 # Pyspark shell
 
 export SPARK_HOME=/folder/spark-2.4.0-bin-hadoop2.7
+
 export PATH=$SPARK_HOME/bin:$PATH
 
 export PYSPARK_PYTHON=/home/username/anaconda3/bin/python
+
 export PATH=$PYSPARK_PYTHON:$PATH
 
 # Spark-xml
