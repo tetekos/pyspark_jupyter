@@ -1,7 +1,6 @@
-# pyspark_jupyter
-How to install/use Pyspark within Jupyter
+# How to install/use Pyspark within Jupyter
 
-# Java 8
+## Java 8
 
 We need to install Java 8
 
@@ -20,7 +19,7 @@ Check at the end that java version is correct
 java -version
 
 
-# Spark-2.4.0
+## Spark-2.4.0
 Download spark-2.4.0 from http://spark.apache.org/downloads.html
 
 Unzip it and move it to a folder (just be mindful of the ownership of that folder)
@@ -32,7 +31,7 @@ Add the env variables to .bashrc
 
 nano ~/.bashrc
 
-# Pyspark shell
+## Pyspark shell
 
 export SPARK_HOME=/folder/spark-2.4.0-bin-hadoop2.7
 
@@ -42,10 +41,10 @@ export PYSPARK_PYTHON=/home/username/anaconda3/bin/python
 
 export PATH=$PYSPARK_PYTHON:$PATH
 
-# Spark-xml
+## Spark-xml
 Go to https://mvnrepository.com/artifact/com.databricks/spark-xml_2.11/0.4.1 and download the jar file and then add it to the jar folder of the spark-2.4.0
 
-# Findspark
+## Findspark
 If we want to use jupyter we can use the module findspark (https://github.com/minrk/findspark)
 
 pip install findspark
@@ -54,7 +53,7 @@ conda config --add channels conda-forge
 
 conda install findspark
 
-# Jupyter
+## Jupyter
 
 Just as an example (the books.xml file should be downloaded https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml)
 
