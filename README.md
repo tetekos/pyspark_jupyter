@@ -64,3 +64,9 @@ conda install findspark
 ## Jupyter
 
 Just as an example pyspark_base.py (the books.xml file should be downloaded https://github.com/databricks/spark-xml/raw/master/src/test/resources/books.xml)
+
+## Postgresql
+
+Download the latest postgresql-42.2.5.jar (https://jdbc.postgresql.org/download.html) and paste it to the /folder/spark-2.4.0-bin-hadoop2.7/jar
+
+Restart the Kernel and it will be picked up
